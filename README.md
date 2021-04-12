@@ -4,6 +4,7 @@ An efficient lightweight templating library for javascript.
 # Why use vew.js?
 vew.js is extremely fast. It uses fast platform features like HTML <template> elements with native cloning.
 Unlike VDOM libraries, vew.js only ever updates the parts of templates that actually change - it doesn't re-render the entire view.
+  
 vew.js will help you create - delete - update DOM tree easly and also gives you nice maintainable structure, 
 keep in mind that vew.js light as feather with file size of 14 bytes unminified so you dont have to think about load time.
 
