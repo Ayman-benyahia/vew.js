@@ -4,15 +4,14 @@ An efficient lightweight templating library for javascript.
 # Why use vew.js?
 vew.js is extremely fast. It uses fast platform features like HTML <template> elements with native cloning.
 Unlike VDOM libraries, vew.js only ever updates the parts of templates that actually change - it doesn't re-render the entire view.
-  
 vew.js will help you create - delete - update DOM tree easly and also gives you nice maintainable structure, 
 keep in mind that vew.js light as feather with file size of 14 bytes unminified so you dont have to think about load time.
 
 
 # How to use?
 vew.js has three functions(create, update, delete), 
-you can start by create template element inside HTML and giving it a id,
-after that instantiate "View" class that needs two parameters model and template id, 
+you can start by creating template element inside HTML and giving it a id,
+after that instantiate "View" class that needs two parameters model and template id.
 we are going to make random color generator as example see code below:
 
 HTML
