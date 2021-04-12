@@ -70,7 +70,7 @@ let color = new View({
 "color");
 ```
 
-let's talk about HTML, we have template element that has id and contains three elements (div, h5, button),
+let's talk about HTML above, we have template element that has id and contains three elements (div, h5, button),
 div has style attribute with value of background: rgb({{red}}, {{green}}, {{blue}}), keep in mind that {{red}} & {{green}} {{blue}}
 are variables with default value of 0 and they exist inside the model(normal js object).
 
