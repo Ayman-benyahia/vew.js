@@ -4,15 +4,17 @@ An efficient lightweight templating library for javascript.
 # Why use vew.js?
 vew.js is extremely fast. It uses fast platform features like HTML <template> elements with native cloning.
 Unlike VDOM libraries, vew.js only ever updates the parts of templates that actually change - it doesn't re-render the entire view.
-vew.js will help you create - delete - update DOM tree easly and also gives you nice maintainable structure, keep in mind that vew.js light as feather with file size of 14 ko unminified (minified 'number here'ko)
-so you dont have to think about load time.
+vew.js will help you create - delete - update DOM tree easly and also gives you nice maintainable structure, keep in mind that vew.js 
+light as feather with file size of 14 bytes unminified so you dont have to think about load time.
 
 
 # How to use?
-vew.js has three functions(create, update, delete), you can start by create template element inside html and giving it a id,
-after that instantiate "View" class that needs two parameters model and template id, we are going to make random color generator as example see code below:
+vew.js has three functions(create, update, delete), 
+you can start by create template element inside html and giving it a id,
+after that instantiate "View" class that needs two parameters model and template id, 
+we are going to make random color generator as example see code below:
 
-HTML ---
+HTML
 ```
 <template id="color">
   <div style="background: rgb({{red}}, 
@@ -27,7 +29,7 @@ HTML ---
 </template>
 ```
 
-CSS ---
+CSS 
 ```
 * {
   margin: 0;
@@ -54,7 +56,7 @@ div {
 }
 ```
 
-JAVASCRIPT ---
+JAVASCRIPT 
 ```
 let color = new View({
   red: 0,
@@ -82,12 +84,12 @@ that has everything(variables, functions) that exist on template and also there 
 the model contains four properties (red, green, blue, generate function) when you click on button generate event function get invoked and new values are generated for
 (red, green, blue) but nothing will change until you call update function and the changed part get rerendered,
 
-*Note: keep in mind if you have for example model that similar to this { parent: {child: "value"} } you can express it as template
-variable as {{parent.child}} you can add as many nesting as you want.*
+**Note: keep in mind if you have for example model that similar to this { parent: {child: "value"} } you can express it as template
+variable as {{parent.child}} you can add as many nesting as you want.**
 
 vew.js also support nesting templates see code below:
 
-HTML ---
+HTML
 ```
 <template id="parent">
     {{text}}
@@ -97,7 +99,7 @@ HTML ---
 </template>
 ```
 
-JAVASCRIPT ---
+JAVASCRIPT 
 ```
 let parent = new View({text: "Parent"}, "parent");
 let child = new View({text: "Child"}, parent.id + "child");
