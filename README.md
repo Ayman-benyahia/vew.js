@@ -10,7 +10,7 @@ keep in mind that vew.js light as feather with file size of 14 bytes unminified 
 
 # How to use?
 vew.js has three functions(create, update, delete), 
-you can start by create template element inside html and giving it a id,
+you can start by create template element inside HTML and giving it a id,
 after that instantiate "View" class that needs two parameters model and template id, 
 we are going to make random color generator as example see code below:
 
