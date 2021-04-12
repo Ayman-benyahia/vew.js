@@ -85,7 +85,7 @@ the model contains four properties (red, green, blue, generate function) when yo
 (red, green, blue) but nothing will change until you call update function and the changed part get rerendered,
 
 ***Note: keep in mind if you have for example model that similar to this `{parent:{child: "value"}}` you can express it as template
-variable as `{{parent.child}}` you can add as many nesting as you want.***
+variable `{{parent.child}}` you can add as many nesting as you want.***
 
 ***Note: you can delete the rendered template by calling delete function and render it again by calling create function.***
 
