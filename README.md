@@ -32,7 +32,7 @@ CSS ---
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border\-box;
+  box-sizing: border-box;
   font-family: sans-serif;
   margin-bottom: 8px;
   color: #212121;
