@@ -4,8 +4,8 @@ An efficient lightweight templating library for javascript.
 # Why use vew.js?
 vew.js is extremely fast. It uses fast platform features like HTML <template> elements with native cloning.
 Unlike VDOM libraries, vew.js only ever updates the parts of templates that actually change - it doesn't re-render the entire view.
-vew.js will help you create - delete - update DOM tree easly and also gives you nice maintainable structure, keep in mind that vew.js 
-light as feather with file size of 14 bytes unminified so you dont have to think about load time.
+vew.js will help you create - delete - update DOM tree easly and also gives you nice maintainable structure, 
+keep in mind that vew.js light as feather with file size of 14 bytes unminified so you dont have to think about load time.
 
 
 # How to use?
@@ -73,7 +73,7 @@ let color = new View({
 ```
 
 let's talk about HTML above, we have template element that has id and contains three elements (div, h5, button),
-div has style attribute with value of background: rgb({{red}}, {{green}}, {{blue}}), keep in mind that {{red}} & {{green}} {{blue}}
+div has style attribute with value of `background: rgb({{red}}, {{green}}, {{blue}})`, keep in mind that `{{red}} & {{green}} & {{blue}}`
 are variables with default value of 0 and they exist inside the model(normal js object).
 
 h5 contains three span elements every one of them has variable (red, green, blue).
@@ -84,10 +84,10 @@ that has everything(variables, functions) that exist on template and also there 
 the model contains four properties (red, green, blue, generate function) when you click on button generate event function get invoked and new values are generated for
 (red, green, blue) but nothing will change until you call update function and the changed part get rerendered,
 
-**Note: keep in mind if you have for example model that similar to this `{parent:{child: "value"}}` you can express it as template
-variable as {{parent.child}} you can add as many nesting as you want.**
+***Note: keep in mind if you have for example model that similar to this `{parent:{child: "value"}}` you can express it as template
+variable as `{{parent.child}}` you can add as many nesting as you want.***
 
-**Note: you can delete the rendered template by calling delete function and render it again by calling create function.**
+***Note: you can delete the rendered template by calling delete function and render it again by calling create function.***
 
 vew.js also support nesting templates see code below:
 
