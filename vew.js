@@ -123,7 +123,7 @@ export default class View {
         this.firstRender = false; 
 
         // regex patterns
-        this.MATCH_TEMPLATE = /\<template(\n|.)*<\/template>/g;
+        this.MATCH_TEMPLATE = /\<template((\n|.)*?)<\/template>/g;
         this.MATCH_ATTRIBUTES = /\w+\=\"(.*?)\"/g;
         this.MATCH_TEMPLATE_VAR = /\{\{(.*?)\}\}/g;
         this.MATCH_TEMPLATE_EVENT = /@\w+\=\"(.*?)\"/g;
